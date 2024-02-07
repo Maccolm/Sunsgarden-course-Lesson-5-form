@@ -1,0 +1,49 @@
+a{
+	color: #fff;
+}
+p{
+	line-height: 1.625;
+}
+body{
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+}
+
+// Оболочка wrapper =========================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	overflow-x: hidden;
+	// Прижимаємо footer
+	> main {
+		flex: 1 1 auto;
+		width: 100%;
+	}
+	// Фікс для слайдерів
+	> *{
+		min-width: 0;
+	}
+}
+// Обмежуючий контейнер =========================================================
+[class*=__container] {
+	max-width: 1165px;
+	margin: 0 auto;
+	@media(max-width: 600px) {
+		padding: 0 10px 0 10px;
+	}
+}
+[class*="page"] {
+	min-height: 100vh;
+	@media (max-width: 768px) {
+		min-height: 100vh;
+	}
+	@media(max-height: 600px) {
+		min-height: 100vh;
+	}
+}

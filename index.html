@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Form</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="form__container">
+			<div class="form-form">
+				<form action="">
+					<label for="name" class="label">full name</label>
+					<input type="text" name="name" id="name" class="input input__large input-name" required>
+					<label for="email" class="label">email</label>
+					<input type="email" name="email" id="email" class="input input-email" placeholder="Your Email" required>
+					<label for="regarding-message" class="label label-regarding">Message Regarding</label>
+					<input type="text" name="message" id="regarding-message" class="input">
+					<label for="message" class="label">Message</label>
+					<input type="text" name="message" id="message" class="input input__large" placeholder="Your Message">
+					<button type="submit" class="button" disabled>Send Message</button>
+				</form>
+			</div>
+			<div class="form__square">
+			</div>
+			<img class="form__img" src="img/duck.png" alt="duck">
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

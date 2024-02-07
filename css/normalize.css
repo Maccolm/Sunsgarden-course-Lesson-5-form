@@ -1,0 +1,55 @@
+a {
+  color: #fff;
+}
+
+p {
+  line-height: 1.625;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: hidden;
+}
+.wrapper > main {
+  flex: 1 1 auto;
+  width: 100%;
+}
+.wrapper > * {
+  min-width: 0;
+}
+
+[class*=__container] {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  [class*=__container] {
+    padding: 0 10px 0 10px;
+  }
+}
+
+[class*=page] {
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  [class*=page] {
+    min-height: 100vh;
+  }
+}
+@media (max-height: 600px) {
+  [class*=page] {
+    min-height: 100vh;
+  }
+}
